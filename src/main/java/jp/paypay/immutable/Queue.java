@@ -16,14 +16,12 @@ public interface Queue<E> {
      * The deQueue() operation of ImmutableQueue runs in O(n) time in worst case and O(1) time in best case.
      * The worst case O(n) time arises since that could involve reversing of the full forwards stack.
      * @return The Queue instance
-     * @throws {@link EmptyQueueException}
      */
     Queue<E> deQueue();
 
     /**
      * Head operation will peek the first element enqueue into the forwards stack without removing it.
      * @return First element enqueued
-     * @throws {@link EmptyQueueException}
      */
     E head();
 
