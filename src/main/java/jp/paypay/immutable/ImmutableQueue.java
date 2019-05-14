@@ -112,7 +112,10 @@ public class ImmutableQueue<E> implements Queue<E> {
         public final E head() {
             throw new EmptyQueueException("Queue is empty.");
         }
-
+        /**
+          * Empty queue always return true
+          * @return is empty
+          */
         @Override
         public final boolean isEmpty() {
             return true;
