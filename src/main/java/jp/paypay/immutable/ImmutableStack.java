@@ -30,12 +30,12 @@ public class ImmutableStack<E> implements Stack<E> {
     }
 
     @Override
-    public final Stack<E> pop() throws EmptyStackException {
+    public final Stack<E> pop() {
         return tail;
     }
 
     @Override
-    public final  E head() throws EmptyStackException {
+    public final  E head() {
         return head;
     }
 
