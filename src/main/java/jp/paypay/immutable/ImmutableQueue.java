@@ -38,9 +38,8 @@ public class ImmutableQueue<E> implements Queue<E> {
      * @param stack The stack to be reversed
      * @param <E> Elements inside the stack to be reversed
      * @return The reversed stack
-     * @throws EmptyQueueException
      */
-    public static final <E> Stack reverseStack(Stack<E> stack) throws EmptyQueueException {
+    public static final <E> Stack reverseStack(Stack<E> stack) {
         Stack<E> r = ImmutableStack.getEmptyStack();
         while(!stack.isEmpty()) {
             r = r.push(stack.head());
