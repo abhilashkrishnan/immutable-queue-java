@@ -14,14 +14,12 @@ public interface Stack<E> {
     /**
      * Pop operation will return stack of oldest elements pushed into the tail.
      * @return Stack of oldest elements
-     * @throws {@link EmptyStackException}
      */
     Stack<E> pop();
 
     /**
      * Head operation will peek the latest element pushed into the stack without removing it.
      * @return Latest element
-     * @throws {@link EmptyStackException}
      */
     E head();
 
