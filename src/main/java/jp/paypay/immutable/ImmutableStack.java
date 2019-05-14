@@ -79,7 +79,11 @@ public class ImmutableStack<E> implements Stack<E> {
         public final E head() {
             throw new EmptyStackException("Stack is empty");
         }
-
+        
+        /**
+          * Empty stack always return true
+          * @return is empty
+          */
         @Override
         public final boolean isEmpty() {
             return true;
